@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>File Exchange</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1>File Exchange</h1>
+
+        <div class="card">
+            <h3>Stats</h3>
+            <div class="stats">
+                <div>Files: <strong id="fileCount">0</strong></div>
+                <div>Size: <strong id="totalSize">0 Bytes</strong></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Upload File</h3>
+            <input type="file" id="fileInput">
+            <button id="uploadBtn">Upload</button>
+        </div>
+
+        <div id="statusText" class="status"></div>
+
+        <div class="progress" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="card result" id="result">
+            <h3>Download Link:</h3>
+            <a href="#" id="downloadLink" target="_blank"></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>

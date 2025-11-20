@@ -1,0 +1,1 @@
+java -jar ./target/file-service-1.0.jar
